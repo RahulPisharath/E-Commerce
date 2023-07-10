@@ -3,25 +3,18 @@ import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 
 const DetailView = () => {
   return (
-    <div className="container">
+    <>
+    <div className="container py-5">
     <div className="main-body">
-    <marquee className="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> 
-             
-             <a href="#">Expert home and local services at your convenience! Download the Joboy app now! </a> <span className="dot"></span>
-              
-             <a href="#">Carpenter services now available in Trivandrum. Book now! </a> <span className="dot"></span>
-              
-             <a href="#">Refer your friends to Joboy and earn 750 reward coins when they use Joboy services </a> <span className="dot"></span>
-              
-             <a href="#">Get Rs. 75 OFF on Electrician and Plumbing Services. Limited Time Offer! Use Code REPAIR75 </a> <span className="dot"></span>
-                       </marquee>
+
+    <h2 className='py-2 mb-3'> Furniture</h2>
       <Tabs defaultTab="vertical-tab-one" vertical>
         <div className="row">
           <div className="col-sm-12 col-lg-12 ">
             <div className="card-body">
                 <TabList className="tabs_order horizontal">
                 <Tab tabFor="vertical-tab-one">Rates And Charges</Tab>
-                <Tab tabFor="vertical-tab-two">Billings & Payments</Tab>
+                <Tab tabFor="vertical-tab-two">How It Works</Tab>
                 <Tab tabFor="vertical-tab-three">Terms & Conditions</Tab>
                 <Tab tabFor="vertical-tab-four">FAQ's</Tab>
                 </TabList>
@@ -36,47 +29,36 @@ const DetailView = () => {
                 <div className="card-body">
                   <div>
 
-                    <form>
-                      <fieldset disabled>
-                        <legend className="legend">My Profile
-                          <i className="bi bi-pencil-square"></i>
-                        </legend>
-                        <div className="row">
-                          <div className="col-sm-12 col-md-6">
-                            <div className="mb-3">
-                              <label for="disabledTextInput" className="form-label">Name</label>
-                              <input type="text" id="disabledTextInput" className="form-control"
-                                placeholder="Kathy Wright" />
-                            </div>
-                          </div>
-                          <div className="col-sm-12 col-md-6">
-                            <div className="mb-3">
-                              <label for="disabledTextInput" className="form-label">Email</label>
-                              <input type="email" id="disabledTextInput" className="form-control"
-                                placeholder="loremipsum@mail.com" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="row">
-                          <div className="col-sm-12 col-md-6">
-                            <div className="mb-3">
-                              <label for="disabledPhoneNumber" className="form-label">Phone Number</label>
-                              <input id="disabledPhoneNumber" type="tel" name="tel" value="333-444-5555"
-                                className="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-                            </div>
-                          </div>
-                          <div className="col-sm-12 col-md-6">
-                            <div className="mb-3">
-                              <label for="disabledAddress" className="form-label">Address</label>
-                              <input type="textarea" id="disabledAddress" className="form-control"
-                                placeholder="loremipsum " />
-                            </div>
-                          </div>
-                        </div>
-
-                        <button type="submit" className="btn btn-primary">Submit</button>
-                      </fieldset>
-                    </form>
+                  <table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>First 1 Hour</td>
+      <td>₹ 299</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Upto 1.5 Hrs</td>
+      <td>₹ 399</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Upto 2 Hrs</td>
+      <td>₹ 509</td>
+    
+    </tr>
+  </tbody>
+</table>
                   </div>
 
                 </div>
@@ -88,66 +70,11 @@ const DetailView = () => {
               <div className="card p-3 shadow-none border-0">
                 <div className="card-body">
 
-                  <form>
-                    <fieldset>
-                      <legend className="legend">Filter By
-
-                      </legend>
-                      <div className="row">
-                        <div className="col-sm-12 col-md-3">
-                          <div className="mb-3">
-                            <label for="orderType" className="form-label">Order Type</label>
-                            <select id="orderType" className="form-select">
-                              <option>Services</option>
-                              <option>Shopping</option>
-                              <option>Deals</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="col-sm-12 col-md-3">
-                          <div className="mb-3">
-                            <label for="status" className="form-label">Status</label>
-                            <select id="status" className="form-select">
-                              <option value="0" selected="">Open</option>
-                              <option value="9">Confirmed</option>
-                              <option value="4">Assigned</option>
-                              <option value="7">Rescheduled</option>
-                              <option value="1">In Progress</option>
-                              <option value="2">Pending</option>
-                              <option value="3">completed</option>
-                              <option value="8">Invoiced</option>
-                              <option value="6">Cancelled</option>
-                              <option value="10">Quotation</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div className="col-sm-12 col-md-3">
-                          <label for="FromDate" className="form-label">From Date</label>
-                          <div className="input-group">
-
-                            <input type="text" className="form-control" value="12-02-2013" />
-                            <span className="input-group-text">
-                              <i className="bi bi-calendar3"></i></span>
-                          </div>
-                        </div>
-                        <div className="col-sm-12 col-md-3">
-                          <label for="ToDate" className="form-label">To Date</label>
-                          <div className="input-group">
-
-                            <input type="text" className="form-control" value="12-02-2013" />
-                            <span className="input-group-text">
-                              <i className="bi bi-calendar3"></i></span>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div>
-                        <button type="submit" className="btn btn-sm btn-primary">Reset</button>
-                        <button type="submit" className="btn btn-sm btn-secondary mx-3">Submit</button>
-                      </div>
-                    </fieldset>
-                  </form>
+                After you book the service, electricians in your area will receive a notification coordinated by ServiceProvider customer service. Kindly wait for the confirmation message.
+Our service partner will call and note the details of the problem, to bring along the necessary tools and other equipment.
+Make sure all materials for service are kept ready before service starts. In case you want the ServiceProvider partner to purchase the materials, let them know beforehand. The time taken for purchase of materials will be added as part of service charges.
+ServiceProvider partner will give you a quotation if required for work that requires more than 4 hours. Work will be done only after your approval of the quote
+When the work is over, our agent will let you know the service charge. Please make the payment accordingly online on our platform or by cash to the service provider
 
                 </div>
               </div>
@@ -158,50 +85,18 @@ const DetailView = () => {
 
               <div className="card p-3 shadow-none border-0">
                 <div className="card-body">
-                  <legend className="legend">Last Order History</legend>
-
-                  <ul className="timeline">
-                    <li className="active">
-                      <h6>PICKED</h6>
-                      <p className="mb-0 text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque Lorem ipsum dolor
-                      </p>
-                      <p className="text-muted">21 March, 2014</p>
-                    </li>
-                    <li>
-                      <h6>PICKED</h6>
-                      <p className="mb-0 text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque
-                      </p>
-                      <p className="text-muted">21 March, 2014</p>
-                    </li>
-                    <li>
-                      <h6>PICKED</h6>
-                      <p className="mb-0 text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque
-                      </p>
-                      <p className="text-muted">21 March, 2014</p>
-                    </li>
-                    <li>
-                      <h6>PICKED</h6>
-                      <p className="mb-0 text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque
-                      </p>
-                      <p className="text-muted">21 March, 2014</p>
-                    </li>
-                    <li>
-                      <h6>PICKED</h6>
-                      <p className="mb-0 text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque
-                      </p>
-                      <p className="text-muted">21 March, 2014</p>
-                    </li>
-                  </ul>
+                 <dl>
+                   <dt>
+                     
+                   </dt>
+                   <dd></dd>
+                 </dl>
+                  ServiceProvider charges for unit of 1 hour of service initially, and every 30 minutes thereon
+Material charges are additional. Customer can either purchase the material directly or request the service partner to procure it. Time for material procurement will be charged in the final bill
+If the user decides not to proceed with the service delivery or reschedules the service after partner arrives at the user premises, Rs. 150 will be charged as inspection charges
+An additional Rs. 150 will be added to the service charges for service delivery between 08:00 PM and 08:00 AM, on Sundays and public holidays.
+Our service partner will help you with a quotation in case of long hour work schedules. Please confirm the quotation before initiating work to avoid any conflict on service completion. In case you do not want to continue service, we may charge Rs. 150 as inspection charge.
+We offer upto 7 days warranty on the service in case of recurring issues of the same nature where repair was done
                 </div>
               </div>
 
@@ -210,8 +105,41 @@ const DetailView = () => {
 
               <div className="card p-3 shadow-none border-0">
                 <div className="card-body">
-                  <legend className="legend">Rewards</legend>
-
+                  <dl>
+                  <dt>
+                      Why do I have to pay an inspection/minimum charge?
+                      </dt>
+                    <dd>
+                    You dont have to pay a minimum charge in all cases. Inspection charge compensates the provider for his travel expenses, time, and effort, in case you decide not to proceed with the work after inspection is done
+                    </dd>
+                    <dt>
+                    How do I ensure the authenticity of electricians who delivers service at my place?
+                    </dt>
+                    <dd>We have partnered with the most experienced electricians near your location, verified by ServiceProvider for their background, education, and experience. They are also trained for high levels of customer service</dd>
+                    <dt>
+                    Do they charge amount for the time spent on material purchase during service delivery?
+                    </dt>
+                    <dd>Yes, but our partner will ensure the purchase is done in minimum time. It is preferable to discuss with the electricians and get the necessary materials before the delivery to avoid additional costs.  </dd>
+                  <dt>
+                  What does happen if the provider spends more time at my place?
+                  </dt>
+                  <dd>
+                  Our partners will try to deliver the services in minimum time, so that they can take up the next customer request, and thus earn more money. Our charges are defined in such a way that the more time they spend at a specific location, their opportunity to earn more is reduced. In case you want to continue for more hours, you can ask for a quote from the electricians who visit your place.  
+                  </dd>
+                  <dt>
+                  Is there a warranty for electrical works?
+                  </dt>
+                  <dd>
+                  Yes. We provide upto 7 days warranty on services delivered by our electrician partners. Warranty is applicable only on the specific work done earlier
+                  </dd>
+                  <dt>
+                    
+Are ServiceProvider services available round the clock?
+                  </dt>
+                  <dd>
+                  Yes, we offer certain services 24 x 7 and our customer care team will be available to support you with delivering services on all days. 
+                  </dd>
+                  </dl>
                 </div>
               </div>
 
@@ -222,6 +150,7 @@ const DetailView = () => {
 
     </div>
   </div>
+  </>
   )
 }
 
