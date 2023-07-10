@@ -1,0 +1,51 @@
+.tabs_order{
+    &.vertical{
+        flex-flow: column;
+    }
+    &.horizontal{
+        flex-flow: row;
+    }
+    display: flex;
+   
+    button{
+        &.rwt__tab {
+            border: none;
+            background: transparent;
+            text-align: left;
+            padding:0.85rem;
+           
+        }
+        &[aria-selected="true"]{
+            background-color: #ff4d11;
+            color:#FFF;
+          }
+    }
+}
+ 
+
+.user_roles_shadow{
+    box-shadow: 5px 0 5px -5px rgba(0,0,0,0.7);
+    padding: 2rem 0;
+}
+.margin_center{
+    display: inline-block;
+    margin: 0px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.legend{
+    display: flex;
+    justify-content: space-between;
+    background: #ff4d11;
+    color: #FFF;
+    padding: 0 12px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-bottom: 20px;
+    align-items: center;
+    .bi{
+        font-size: 14px;
+    }
+}
