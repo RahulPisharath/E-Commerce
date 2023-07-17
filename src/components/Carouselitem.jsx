@@ -7,7 +7,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 const Carouselitem = () => {
   return (
   // className "owl-theme" is optional
-<OwlCarousel className="owl-theme py-5" items={6} loop margin={8} nav>
+<OwlCarousel className="owl-theme" items={6} loop margin={8} nav>
     <div className="item item_list text-center">
       <div className="item_box py-2 One card_animation">
         <span className="icon icon_01"></span>

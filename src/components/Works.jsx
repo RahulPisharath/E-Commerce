@@ -14,20 +14,20 @@ return (
                 <ul className='list-style-none d-flex my-3 col_list_ul'>
                     <li className='col-12 col-md-4'>
                         <div className='bg_theme_1'>
-                            <h4 className='heading_h4'>Step 1</h4>
-                            <p>Lorem ipsum dummy text generator over herer!!!</p>
+                            <h6 className='heading_h6 bold'>Step 1</h6>
+                            <p className='p1'>Lorem ipsum dummy text generator over herer!!!</p>
                         </div>
                     </li>
                     <li className='col-12 col-md-4'>
                         <div className='bg_theme_1'>
-                            <h4 className='heading_h4'>Step 2</h4>
-                            <p>Lorem ipsum dummy text generator over herer!!!</p>
+                            <h6 className='heading_h6 bold'>Step 2</h6>
+                            <p className='p1'>Lorem ipsum dummy text generator over herer!!!</p>
                         </div>
                     </li>
                     <li className='col-12 col-md-4'>
                         <div className='bg_theme_1'>
-                            <h4 className='heading_h4'>Step 3</h4>
-                            <p>Lorem ipsum dummy text generator over herer!!!</p>
+                           <h6 className='heading_h6 bold'>Step 3</h6>
+                            <p className='p1'>Lorem ipsum dummy text generator over herer!!!</p>
                         </div>
                     </li>
                 </ul>

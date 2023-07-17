@@ -18,44 +18,20 @@ const Banner = () => {
             <div className="input-group transparent">
             <input
                 type="text"
-                className="form-control"
-                aria-label="Text input with 2 dropdown buttons"
+                className="form-control w-230"
+                aria-label="What are you Looking for?"
                 placeholder="What are you Looking for?"
               />
-              <button
-                className="btn btn-outline-secondary dropdown-select"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Where to Look?
-              </button>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action before
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action before
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Separated link
-                  </a>
-                </li>
-              </ul>
-              
+             
+              <select className="btn btn-outline-secondary dropdown-select" placeholder=" Where to Look?">
+              <option value="">Where to Look?</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                <option value="Kollam">Kollam</option>
+                <option value="Kottayam">Kottayam</option>
+                <option value="Ernakulam">Ernakulam</option>
+                <option value="Thrissur">Thrissur</option>
+              </select>
+       
               <button
                 className="btn btn-outline-secondary btn_themed"
                 type="button"

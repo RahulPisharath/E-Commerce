@@ -5,9 +5,8 @@ import Avatar from '../assets/images/avatar_user.png';
 const Userprofile = () => {
 return (
 <section>
-  <div className="container">
+  <div className="container-fluid">
     <div className="main-body">
-
       <Tabs defaultTab="vertical-tab-one" vertical>
         <div className="row">
           <div className="col-sm-12 col-lg-3 user_roles_shadow">
@@ -76,7 +75,7 @@ return (
                           </div>
                         </div>
 
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn_themed">Submit</button>
                       </fieldset>
                     </form>
                   </div>

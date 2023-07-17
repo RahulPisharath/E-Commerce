@@ -1,6 +1,7 @@
 .tabs_order{
     &.vertical{
         flex-flow: column;
+        padding: 0 1rem;
         button{
             &.rwt__tab {
                 border: none;
@@ -10,8 +11,9 @@
                
             }
             &[aria-selected="true"]{
-                background-color: #ff4d11;
-                color:#FFF;
+                color: #319d1f;
+                border-radius: 50px;
+                font-weight: 700;
               }
         }
     }
@@ -48,8 +50,9 @@
  
 
 .user_roles_shadow{
-    box-shadow: 5px 0 5px -5px rgba(0,0,0,0.7);
     padding: 2rem 0;
+    background: #f7f7f7;
+    border-right: 1px solid #ebdddd;
 }
 .margin_center{
     display: inline-block;
@@ -62,7 +65,7 @@
 .legend{
     display: flex;
     justify-content: space-between;
-    background: #ff4d11;
+    background:#032d42;
     color: #FFF;
     padding: 0 12px;
     border-top-right-radius: 3px;
